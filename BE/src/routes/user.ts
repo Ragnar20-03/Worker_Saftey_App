@@ -10,6 +10,6 @@ router.post('/addConstructionSite', userMiddleware, addConstructionSiteControlle
 router.post('/addLabourToSite/:siteId', userMiddleware, upload.single('adhar'), addLabourController)
 
 router.get('/getAllSites', userMiddleware, getAllSitesController)
-router.get('/getAllSites/:siteId', userMiddleware, getAllLaboursByIdController)
+router.get('/getAllSites/:siteId', userMiddleware, getAllSitesController)
 router.get('/getAllSiteLabours/:siteId', userMiddleware, getAllLaboursController)
 router.get('/getAllLabours/:labourId', userMiddleware, getAllLaboursByIdController)

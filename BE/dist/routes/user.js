@@ -14,6 +14,6 @@ exports.router.post('/login', user_1.userLoginController);
 exports.router.post('/addConstructionSite', user_2.userMiddleware, user_1.addConstructionSiteController);
 exports.router.post('/addLabourToSite/:siteId', user_2.userMiddleware, multer_1.upload.single('adhar'), user_1.addLabourController);
 exports.router.get('/getAllSites', user_2.userMiddleware, user_1.getAllSitesController);
-exports.router.get('/getAllSites/:siteId', user_2.userMiddleware, user_1.getAllLaboursByIdController);
+exports.router.get('/getAllSites/:siteId', user_2.userMiddleware, user_1.getAllSitesController);
 exports.router.get('/getAllSiteLabours/:siteId', user_2.userMiddleware, user_1.getAllLaboursController);
 exports.router.get('/getAllLabours/:labourId', user_2.userMiddleware, user_1.getAllLaboursByIdController);

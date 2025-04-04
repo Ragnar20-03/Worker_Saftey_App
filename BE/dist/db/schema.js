@@ -43,7 +43,7 @@ const siteSchema = new mongoose_1.default.Schema({
 });
 const labourSchema = new mongoose_1.default.Schema({
     firstname: String,
-    lastName: String,
+    lastname: String,
     phone: String,
     address: String,
     insuranceNo: { type: String, default: null },

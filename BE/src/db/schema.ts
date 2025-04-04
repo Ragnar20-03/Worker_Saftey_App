@@ -29,7 +29,7 @@ const siteSchema = new mongoose.Schema({
 })
 const labourSchema = new mongoose.Schema({
     firstname: String,
-    lastName: String,
+    lastname: String,
     phone: String,
     address: String,
     insuranceNo: { type: String, default: null },
